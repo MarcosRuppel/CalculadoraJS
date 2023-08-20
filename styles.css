@@ -1,3 +1,14 @@
+/*workaround para desabilitar as setas do input numérico*/
+/*Firefox*/
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+/*Chrome, Safari, Edge*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,15 +35,18 @@ button{
     color: white;
     background-color: #FF8000;
     border: none;
+    transition-duration: 0.2s;
 }
 
 button:hover{
     background-color: #ffa600;
+    /*box-shadow: 0px 0px 10px 3px #FF8000 inset;*/
 }
 
 button:active{
     background-color: #EE5000;
-    translate: 0px 3px;
+    /*box-shadow: 0px 0px 10px 3px #FF8000 inset;*/
+    transform: translateY(1px);
 }
 
 .calc-button{
@@ -57,7 +71,7 @@ button:active{
     outline: none;
 }
 
-.input-field:focus{
+.input-field:focus, .result-field:focus{
     border: solid 1px #FF8000;
 }
 
@@ -70,4 +84,5 @@ button:active{
     font-size: 14px;
     margin: 3px;
     width: 100px;
+    outline: none;
 }

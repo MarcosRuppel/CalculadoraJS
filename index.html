@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
     <script defer src="functions.js"></script>
     <link rel="stylesheet" href="styles.css"/>
     <title>Calculadora</title>
@@ -10,32 +10,32 @@
 <body>
     <h2>Calculadora</h2>
     <div class="main-container">
-        <input type="number" class="input-field" id="Soma1" placeholder="0" />
-        <input type="number" class="input-field" id="Soma2" placeholder="0" />
+        <input type="number" class="input-field" id="Soma1" />
+        <input type="number" class="input-field" id="Soma2" />
         <button class="calc-button" onclick="calcular('Soma')">+</button>
         <span>=</span>
-        <input type="number" class="result-field" id="resultadoSoma" placeholder="Resultado" />
+        <input type="number" class="result-field" id="resultadoSoma" placeholder="Resultado" disabled/>
         <button class="clear-button" onclick="limparResultado('Soma')">Limpar</button>
         <br>
-        <input type="number" class="input-field" id="Subtracao1" placeholder="0" />
-        <input type="number" class="input-field" id="Subtracao2" placeholder="0" />
+        <input type="number" class="input-field" id="Subtracao1" />
+        <input type="number" class="input-field" id="Subtracao2" />
         <button class="calc-button" onclick="calcular('Subtracao')">-</button>
         <span>=</span>
-        <input type="number" class="result-field" id="resultadoSubtracao" placeholder="Resultado" />
+        <input type="number" class="result-field" id="resultadoSubtracao" placeholder="Resultado" disabled/>
         <button class="clear-button" onclick="limparResultado('Subtracao')">Limpar</button>
         <br>
-        <input type="number" class="input-field" id="Multiplicacao1" placeholder="0" />
-        <input type="number" class="input-field" id="Multiplicacao2" placeholder="0" />
+        <input type="number" class="input-field" id="Multiplicacao1" />
+        <input type="number" class="input-field" id="Multiplicacao2" />
         <button class="calc-button" onclick="calcular('Multiplicacao')">*</button>
         <span>=</span>
-        <input type="number" class="result-field" id="resultadoMultiplicacao" placeholder="Resultado" />
+        <input type="number" class="result-field" id="resultadoMultiplicacao" placeholder="Resultado" disabled/>
         <button class="clear-button" onclick="limparResultado('Multiplicacao')">Limpar</button>
         <br>
-        <input type="number" class="input-field" id="Divisao1" placeholder="0" />
-        <input type="number" class="input-field" id="Divisao2" placeholder="0" />
+        <input type="number" class="input-field" id="Divisao1" />
+        <input type="number" class="input-field" id="Divisao2" />
         <button class="calc-button" onclick="calcular('Divisao')">/</button>
         <span>=</span>
-        <input type="number" class="result-field" id="resultadoDivisao" placeholder="Resultado" />
+        <input type="number" class="result-field" id="resultadoDivisao" placeholder="Resultado" disabled/>
         <button class="clear-button" onclick="limparResultado('Divisao')">Limpar</button>
         <br>
     </div>

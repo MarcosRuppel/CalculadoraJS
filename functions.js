@@ -19,9 +19,11 @@ function calcular(operacao){
         case "Divisao":
             if (valor2 == 0){
                 if (valor1 == 0){
-                    alert("Resultado indeterminado.");
+                    alert("O resultado dessa divisão é indefinido!");
                 }
-                alert("Impossivel dividir por zero!");
+                else{
+                    alert("Não é possível dividir por zero!");
+                }
             }
             else{
                 resultado = valor1 / valor2;
